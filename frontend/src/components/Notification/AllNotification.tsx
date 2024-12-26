@@ -10,7 +10,7 @@ interface NotificationResponse {
 
 const AllNotification = async (token: any): Promise<NotificationResponse[]> => {
   try {
-    const response = await axios.get('https://i11a705.p.ssafy.io/api/notifications', {
+    const response = await axios.get('http://localhost:8080/api/notifications', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -42,8 +42,8 @@ const Login: React.FC = () => {
     };
   }, []);
 
-  const kakoLink = `https://i11a705.p.ssafy.io/api/oauth2/authorization/kakao`;
-  const naverLink = `https://i11a705.p.ssafy.io/api/oauth2/authorization/naver`;
+  const kakoLink = `http://localhost:8080/api/oauth2/authorization/kakao`;
+  const naverLink = `http://localhost:8080/api/oauth2/authorization/naver`;
 
   const kakaoSocialLogin = () => {
     window.location.href = kakoLink;

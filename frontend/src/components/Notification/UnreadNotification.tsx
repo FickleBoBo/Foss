@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const UnreadNotificationCount = async (token: any): Promise<number> => {
   try {
-    const response = await axios.get('https://i11a705.p.ssafy.io/api/notifications/unreadCounts', {
+    const response = await axios.get('http://localhost:8080/api/notifications/unreadCounts', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

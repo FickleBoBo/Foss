@@ -26,6 +26,6 @@ public class CommonLoginSuccessHandler implements AuthenticationSuccessHandler {
         String tempToken = JwtUtils.generateToken(responseMap, 5);
 
         log.info("로그인한 사용자 식별자: " + responseMap.get("id"));
-        response.sendRedirect("https://i11a705.p.ssafy.io?tempToken=" + tempToken);
+        response.sendRedirect("http://localhost:5173?tempToken=" + tempToken);
     }
 }

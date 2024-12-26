@@ -2,7 +2,7 @@
 import axios from 'axios';
 import useAuthStore from '@store/useAuthStore';
 
-const APPLICATION_SERVER_URL = 'https://i11a705.p.ssafy.io/api';
+const APPLICATION_SERVER_URL = 'http://localhost:8080/api';
 
 const apiClient = axios.create({
   baseURL: APPLICATION_SERVER_URL,
